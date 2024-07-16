@@ -1,0 +1,52 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+body.dark-mode {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 50px;
+    margin-top: 50px;
+}
+#mode-toggle {
+    position: fixed;
+    top: 30px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    max-width:150px ;
+    padding: 1px 50px;
+    background: linear-gradient(135deg, rgb(76, 149, 61), #01060c);
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+#mode-toggle:hover {
+    background: linear-gradient(135deg, #05055a, rgb(95, 93, 94));
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+#mode-toggle:focus {
+    box-shadow: 0 0 0 3px rgba(239, 235, 8, 0.5);
+}
+
+#mode-toggle:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 5px rgba(3, 125, 129, 0.2);
+}
